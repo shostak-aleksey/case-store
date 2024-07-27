@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Phone from '@/components/Phone';
 import { Icons } from '@/components/Icon';
 import { UserComment } from '@/components/comment';
+import { Reviews } from '@/components/Reviews';
 export default function Home() {
   return (
     <div className="bg-slate-50">
@@ -176,6 +177,24 @@ export default function Home() {
               </span>
               . I dig it."
             </UserComment>
+          </div>
+        </MaxWidthWrapper>
+        <div className="pt-16">
+          <Reviews />
+        </div>
+      </section>
+
+      <section>
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
+          <div className="flex flex-col items-center gap-4 sm:gap-6 lg:flex-row">
+            <h2 className="mb:text-6x1 order-1 mt-2 text-balance text-center text-5xl font-bold !leading-tight tracking-tight text-gray-900">
+              Upload your photo and get{' '}
+              <span className="relative px-2">
+                own case{' '}
+                <Icons.underline className="pointer-events-none absolute inset-x-0 -bottom-6 left-0 hidden text-[#7d3bed] sm:block" />{' '}
+              </span>{' '}
+              now
+            </h2>
           </div>
         </MaxWidthWrapper>
       </section>

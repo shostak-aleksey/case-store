@@ -1,24 +1,23 @@
-import { cn } from "@/lib/utils";
-import Image from "next/image";
+import { cn } from '@/lib/utils';
+import Image from 'next/image';
 interface PhoneProps extends React.HTMLAttributes<HTMLDivElement> {
   imgSrc: string;
-  dark: boolean;
+  dark?: boolean;
 }
 
 const Phone = ({ imgSrc, className, dark = false, ...props }: PhoneProps) => {
   return (
     <div
       className={cn(
-        "relative pointer-events-none z-50 overflow-hidden",
-        className
+        'pointer-events-none relative z-50 overflow-hidden',
+        className,
       )}
-      {...props}
-    >
+      {...props}>
       <Image
         src={
           dark
-            ? "/phone-template-dark-edges.png"
-            : "/phone-template-white-edges.png"
+            ? '/phone-template-dark-edges.png'
+            : '/phone-template-white-edges.png'
         }
         alt="phone image"
         width={500}
