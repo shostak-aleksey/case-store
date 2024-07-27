@@ -169,7 +169,7 @@ export default function Home() {
               userName="Michael">
               "I usually keep my phone together with my keys in my pocket and
               that led to some pretty heavy scratchmarks on all of my last phone
-              cases. This one, besides a barely noticeable scratch on the
+              cases. This one, besides a barely noticeable scratch on the f
               corner,{' '}
               <span className="font-extrabold text-[#7d3bed]">
                 looks brand new after about half a year
